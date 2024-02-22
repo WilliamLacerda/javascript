@@ -17,14 +17,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        window.alert('Minha primeira mensagem!') 
-        //Serve para criar um alerta na tela.
-        
-        window.confirm('Está gostando de JavaScript?')
-        //Serve para fazer uma confirmação de mensagem.
-
-        window.prompt('Qual é seu nome?')
-        //serve para fazer interação com o usuário, podendo ser um requisito de informação.
+        var n1 = Number(window.prompt('Digite um número: '))
+        //o prompt considerada até os números como uma string, isso é derivado do próprios comando
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2 
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        //(numnber + nunber) para adição
+        //(string + string) para concatenação
     </script>
 </body>
 </html>

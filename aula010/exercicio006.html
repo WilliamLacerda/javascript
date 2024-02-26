@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: yellowgreen;
+            color: yellow;
+            font-size: 24px;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja....
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'violet'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+
+        function sair () {
+            area.innerText = 'Saiu!'
+            area.style.background = 'purple'
+        }
+        /* colocar o var fora da function não é a melhor opção a se fazer, mas por enquanto é um metodo útil */
+    </script>
+</body>
+</html>

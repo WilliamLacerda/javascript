@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refazendo exercicio 10 em formato de site.</title>
+    <title>Refazendo exercicio 9 em formato de site.</title>
 </head>
 <body>
-    
+    <h1>Sistema de verificação de nacionalidade</h1>
+    Em qual país você mora?: <input type="text" name="texto" id="pergunta">
+    <input type="button" value="Enviar" onclick="verificar">
+    <div id="resultado"></div>
+
+    <script>
+        var  pergunta = window.document.querySelector('input#pergunta')
+        var resultado = window.document.querySelector('div#resultaado')
+        resultado.innerHTML = `Você é ${pergunta}`
+    </script>
 </body>
 </html>

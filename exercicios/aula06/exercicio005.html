@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: thistle;
-            color: whitesmoke;
+            color: black;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20pt;
         }
@@ -22,28 +22,34 @@
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1]
-        /* window.document.write('Está escrito assim: ' + p1.innerText)
-        comando para fazer escrever e mudar o que está escrito no paragráfo do HTML */
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        /* comando para fazer escrever e mudar o que está escrito no paragráfo do HTML */
 
-        /* corpo.style.background = 'violet'
-        comando para fazer mudar o estilo do elemento */
+        corpo.style.background = 'violet'
+        /* comando para fazer mudar o estilo do elemento */
 
-        /* p1.style.color = 'pink'
-        window.alert(p1.innerText) */
+        p1.style.color = 'pink'
+        window.alert(p1.innerText)
 
-        /* var d = window.document.getElementById('mensagem')
-        comando da variavel por ID */
-        /* d.style.background = 'lightpink' */
-        /* d.innerText = 'Estou agurdando...' */
-        /* window.document.getElementById('mensagem').innerText = 'Salve quebrada'
-        comando para fazer seleção por ID */
 
-        /* var d = window.document.getElementsByName('mensagem')[0]
+        var d = window.document.getElementById('mensagem')
+        /* comando da variavel por ID */
+
+        d.style.background = 'lightpink'
+        d.innerText = 'Estou agurdando...'
+        /* método mais simplificado para mudar o texto usando o JavaScript */
+
+        window.document.getElementById('mensagem').innerText = 'Salve quebrada'
+        /* comando para fazer seleção por ID e também é o método mais completo para mudar o texto usando JavaScript com ID */
+
+
+        var d = window.document.getElementsByName('mensagem')[0]
         d.innerText = 'Qual é a demora?'
-        variavel usando a seleção por Name */
+        /* variavel usando a seleção por Name */
 
-        /* window.document.getElementsByClassName('mensagem')
-        comando para fazer seleção por Name */
+        window.document.getElementsByClassName('mensagem')
+        /* comando para fazer seleção por Name */
+        
 
         var d = window.document.querySelector('div#mensagem')
         d.style.background = 'lavender'

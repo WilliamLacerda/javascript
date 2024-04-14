@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Digite aqui um país: <input type="text" name="País" id="país">
+    <input type="button" value="Enviar">
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var nacionalidade = window.document.querySelector("input#país")
+            var resultado = window.document.querySelector("div#resultado")
+            var país = (país.value)
+            resultado.innerHTML = `A sua naciolinalidade é ${nacionalidade} Brasileiro`
+            if (país != "Brasil") {
+                res.innerHTML += `A sua nacionalidade não é brasileiro, você é estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>

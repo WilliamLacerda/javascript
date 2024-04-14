@@ -5,3 +5,4 @@ if (país == 'Brasil') { //pode se usar também != (diferente) no lugar de == (i
 } else {
     console.log('Você é Estrangeiro!')
 }
+//Condição composta

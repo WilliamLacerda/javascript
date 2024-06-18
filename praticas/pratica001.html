@@ -13,9 +13,9 @@
 
     <script>
         function calcular() {
-            var nacionalidade = window.document.querySelector("input#país")
+            var país = window.document.querySelector("input#país")
             var resultado = window.document.querySelector("div#resultado")
-            var país = (país.value)
+            var Naciolinalidade = (país.value)
             resultado.innerHTML = `A sua naciolinalidade é ${nacionalidade} Brasileiro`
             if (país != "Brasil") {
                 res.innerHTML += `A sua nacionalidade não é brasileiro, você é estrangeiro.`
